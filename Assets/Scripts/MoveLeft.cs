@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class MoveLeft : MonoBehaviour
 {
@@ -8,10 +9,12 @@ public class MoveLeft : MonoBehaviour
 
     private PlayerController playerController;
 
+
     void Start()
     {
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
     }
+
 
     // Update is called once per frame
     void Update()
@@ -25,5 +28,7 @@ public class MoveLeft : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+    
     }
 }
